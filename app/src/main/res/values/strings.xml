@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NavigationComponent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nameApp">Jokenpô</string>
+    <string name="start">Começar</string>
+    <string name="select">Selecione uma opção</string>
+    <string name="label_select">Selecione sua jogada</string>
+    <string name="play">Jogar</string>
+    <string name="play_again">Jogar Novamente</string>
+    <string name="result">Resultado</string>
+    <string name="ai">Inteligência</string>
+    <string name="you">Sua jogada</string>
+
+    <string-array name="available_plays_array">
+        <item>Papel</item>
+        <item>Tesoura</item>
+        <item>Pedra</item>
+    </string-array>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationcomponent.HomeFragment"
+        android:label="fragment_blank1"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_playFragment"
+            app:destination="@id/playFragment" />
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.example.navigationcomponent.PlayFragment"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_play" >
+        <action
+            android:id="@+id/action_playFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.navigationcomponent.ResultFragment"
+        android:label="fragment_blank3"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="selectPlay"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultFragment_to_playFragment"
+            app:destination="@id/playFragment" />
+    </fragment>
+</navigation>
